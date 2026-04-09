@@ -1,0 +1,71 @@
+{
+    "questions": [
+        {
+            "question": "Are you horny now?",
+            "charge": "Arousal",
+            "answer": "Good. That's healthy. However, you must continue to wear your lock.",
+            "add": 1
+        },
+        {
+            "question": "Do you have a hard-on now?",
+            "charge": "Erection",
+            "answer": "That's healthy but you must continue to wear your lock",
+            "add": 1
+        },
+        {
+            "question": "When you have a hard-on, does it hurt?",
+            "charge": "Painful erections",
+            "answer": "Tough. You should have set it up more carefully",
+            "add": 0
+        },
+        {
+            "question": "Is your lock uncomfortable?",
+            "charge": "Discomfort",
+            "answer": "Tough. You should have set it up more carefully",
+            "add": 2
+        },
+        {
+            "question": "Do you want to end the session?",
+            "charge": "Desires release",
+            "answer": "Tough. You can't end your session.",
+            "add": 1
+        },
+        {
+            "question": "Did you investigate another chastity device?",
+            "charge": "Contemplated Devices",
+            "answer": "Learn to be happy with the device you are wearing.",
+            "add": 1
+        },
+        {
+            "question": "Did buy you buy something on eBay?",
+            "charge": "Online Purchase",
+            "answer": "You need to buy according to need, not want.",
+            "add": 1
+        },
+        {
+            "question": "Since we last spoke, have you tried to masturbate?",
+            "charge": "Attempted masturbation",
+            "answer": "You are a bad boy! You must continue to wear your lock",
+            "add": 2
+        },
+        {
+            "question": "Since we last spoke, have you tried to pick your lockbox?",
+            "charge": "Lock-Picking",
+            "answer": "You are a very bad boy! You must continue to wear your lock",
+            "add": 4
+        },
+        {
+            "question": "Have you been dishonest with me?",
+            "charge": "Charge",
+            "answer": "You must not like to me. Lying increases time",
+            "add": 8
+        }
+    ],
+    "platitudes": [
+        "chastity is good for you.",
+        "your lock is your friend.",
+        "you deserve to wear a chastity lock.",
+        "bad boys deserve to wear chastity belts.",
+        "good boys wear their chastity belts with pride."
+    ]
+}
