@@ -18,7 +18,7 @@ n
 Thank you for answering the questions.
 
 Here is your chastity compliance report:
-\=============================================
+=============================================
 Chastity Compliance Report and Recommendation
 
 Subject reported the following compliance problems.
@@ -27,7 +27,7 @@ Contemplated Devices: 1
 
 Chastity Review Officer Recommendation:
 Subject is to add 1 hour to his time.
-\=============================================
+=============================================
 You may go. Remember, bad boys deserve to wear chastity belts.
 ```
 
