@@ -1,10 +1,17 @@
 # chask.py
+#
+# Simple command-line version
+#
 # asks you questions about your state of chastity
 # calculates additional time for the chastity session
 #
 # Questions come from the accompanying chask.json file. 
 # You may add questions
 import random
+import datetime
+import json
+import argparse
+import getpass
 
 questions = []
 charges = []
@@ -13,14 +20,7 @@ adds = []
 
 platitudes = []
 
-additional_time = 0
-min_questions = 2
-max_questions = 4
-questions_to_ask = random.randint(min_questions, max_questions)
-questions_asked = 0
-charges_added = []
-
-import json
+# Read the questions list
 with open('chask.json', 'r', encoding='utf-8') as questions_file:
     questions_obj = json.load(questions_file)
 
@@ -33,10 +33,25 @@ for thing in questions_obj['questions']:
     answers.append(thing['answer'])
     adds.append(thing['add'])
 
-# set up the list of unasked questions
 notasked = []
 for i in range(0,len(questions)):
     notasked.append(i)
+
+# figure how many questions to ask
+parser = argparse.ArgumentParser()
+parser.add_argument("--min", default="3", help="fewest nmber of questions to ask")
+parser.add_argument("--max", default="5", help="max number of questions to ask")
+parser.add_argument("--all", help="ask all the questions")
+args = parser.parse_args()
+
+additional_time = 0
+min_questions = int(args.min)
+max_questions = int(args.max)
+
+questions_to_ask = random.randint(min_questions, max_questions)
+questions_asked = 0
+charges_added = []
+
 
 # print greeting
 print('Thank you for coming to your appointment with the Chastity Compliance Review Board.')
@@ -69,6 +84,8 @@ print()
 print('Here is your chastity compliance report:')
 print('=============================================')
 print('Chastity Compliance Report and Recommendation')
+print(f'Subject: {getpass.getuser()}')
+print(f'Date and Time:{datetime.datetime.now()}')
 print()
 if len(charges_added) > 0:
     print('Subject reported the following compliance problems.')
